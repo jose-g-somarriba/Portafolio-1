@@ -1,0 +1,137 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+
+}
+*, *::before,
+*::after{
+    box-sizing: inherit;
+}
+
+.container-flex{
+    display: flex;
+    margin: auto;
+    margin-top: 19px;
+    flex-direction: column;
+    width: 90%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px 12px 0 0;
+    height: auto;
+}
+.images{
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+.card{
+    text-align: justify;
+    padding: 15px;
+    margin-top: -10px;
+
+}
+
+.card > h1{
+    font-size: 34px;
+    font-family: 'Fraunces';
+    /* font-family: 'Space Grotesk'; */
+    text-align: justify;
+    letter-spacing: none;
+    color: hsl(212, 21%, 14%);
+
+}
+
+.title {
+    font-size: 14px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    color:hsl(228, 12%, 48%);
+   
+}
+.contend{
+    text-align: start;
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    color:hsl(228, 12%, 48%);
+}
+.contend-price{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.price{
+   
+    font-size: 34px;
+    font-family: 'Fraunces';
+    color:hsl(158, 36%, 37%);
+    margin-right: 10px;
+
+}
+.low-cost{
+    font-size: 14px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    color:hsl(228, 12%, 48%);
+   
+}
+.btn{
+    background-color:hsl(158, 36%, 37%); 
+    width: 100%;
+    border: none;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.images-desktop{
+    display: none;
+}
+
+
+@media screen and (min-width: 450px) and (max-width:1450px) {
+    .container-flex{
+        flex-direction: row;
+        width: 600px;
+        height: auto;
+        margin-top: 100px;
+        border-radius: 12px;
+    }
+    /* .container-flex{
+        width: 60%;
+        height: auto;
+        
+    } */
+    .images{
+        display: none;
+
+    }
+
+    .images-desktop{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px 0 0 12px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .card{
+        width: 400px;
+        padding: 20px;
+    }
+}
